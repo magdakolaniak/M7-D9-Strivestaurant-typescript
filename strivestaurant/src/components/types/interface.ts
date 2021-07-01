@@ -29,3 +29,12 @@ export interface Reservation {
     createdAt: string
     updatedAt: string
 }
+
+export interface Comment {
+  id: number
+  comment:string
+}
+
+export type homeTitle = {
+  title: string
+}

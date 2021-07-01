@@ -1,15 +1,11 @@
-import { Carousel, Col, Container, Row, Button } from 'react-bootstrap';
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import allDishes from '../data/menu.json';
 import { useState } from 'react';
 import DishComments from './DishComments';
 import upperName from '../helpers/lib';
-import { OneDish } from '../components/types/interface';
+import { OneDish, homeTitle } from '../components/types/interface';
 
-interface HomeComponentProps {
-  title: string;
-}
-
-const Home = ({ title }: HomeComponentProps) => {
+const Home = ({ title }: homeTitle) => {
   const [selected, setSelected] = useState<OneDish | null>(null);
 
   return (
@@ -41,7 +37,6 @@ const Home = ({ title }: HomeComponentProps) => {
         </Col>
         <DishComments selectedPasta={selected} />
       </Row>
-      <Button variant="danger"></Button>
     </Container>
   );
 };
