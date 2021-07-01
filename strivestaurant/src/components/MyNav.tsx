@@ -7,13 +7,13 @@ interface MyNavProps extends RouteComponentProps {
 
 const MyNav = ({ title, location }: MyNavProps) => (
   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-    <Link to="/">
+    <Link to="/" className="link-style">
       <Navbar.Brand>{title}</Navbar.Brand>
     </Link>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="ml-auto">
-        <Link to="/">
+        <Link to="/" className="link-style">
           <div
             className={
               location.pathname === '/' ? 'nav-link active' : 'nav-link'
@@ -22,7 +22,7 @@ const MyNav = ({ title, location }: MyNavProps) => (
             Home
           </div>
         </Link>
-        <Link to="/menu">
+        <Link to="/menu" className="link-style">
           <div
             className={
               location.pathname === '/menu' ? 'nav-link active' : 'nav-link'
@@ -31,7 +31,7 @@ const MyNav = ({ title, location }: MyNavProps) => (
             Menu
           </div>
         </Link>
-        <Link to="/reservations">
+        <Link to="/reservations" className="link-style">
           <div
             className={
               location.pathname === '/reservations'
