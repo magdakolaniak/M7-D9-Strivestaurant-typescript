@@ -1,5 +1,5 @@
 import { Container, Row, Col, ListGroup } from 'react-bootstrap';
-import { Comment, OneDish } from './types/interface';
+import { Comment } from './types/interface';
 
 const DishComments = ({ selectedPasta }: any) => (
   <Container>
