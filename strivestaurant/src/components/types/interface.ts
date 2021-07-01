@@ -6,7 +6,7 @@ export interface OneDish {
     label: string
     price: string
     description: string
-   
+    comments: Comment []
     }
     
 

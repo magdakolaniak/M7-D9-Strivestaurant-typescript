@@ -35,7 +35,7 @@ const Home = ({ title }: homeTitle) => {
             ))}
           </Carousel>
         </Col>
-        <DishComments selectedPasta={selected} />
+        {selected && <DishComments selectedPasta={selected} />}
       </Row>
     </Container>
   );
